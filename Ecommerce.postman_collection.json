@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "c7239d9a-49d6-40dd-a333-530c19b952d2",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23385317"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Nokia 5\",\r\n    \"description\" : \"This is Nokia smart phone with 4GB Ram.\",\r\n    \"price\" : 11500,\r\n     \"images\" : [\r\n         {\r\n             \"public_id\" : \"Temp\",\r\n             \"url\" : \"Temp\"\r\n         }\r\n     ],\r\n     \"category\" : \"Phone\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/new",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"IPhone 14\",\r\n    \"description\" : \"This is latest Iphone smart phone with 4GB Ram.\",\r\n    \"price\" : 111500,\r\n     \"images\" : [\r\n         {\r\n             \"public_id\" : \"Temp\",\r\n             \"url\" : \"Temp\"\r\n         }\r\n     ],\r\n     \"category\" : \"Phone\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/638c95445825f59fa1846c4a",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"638c95445825f59fa1846c4a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/638c8abf8c5e200046ba3226",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"638c8abf8c5e200046ba3226"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/product/638c95445825f59fa1846c4a",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"product",
+								"638c95445825f59fa1846c4a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
